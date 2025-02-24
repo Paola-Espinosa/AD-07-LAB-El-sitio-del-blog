@@ -1,5 +1,60 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #9791f3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.nav-item {
+  font-size: 20px;
+  font-style: oblique;
+  margin: 0 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.nav-item a:hover{
+  color: #81f733;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+  margin-top: 40px;
+}
+
+footer p,
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
   
