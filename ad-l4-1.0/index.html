@@ -55,6 +55,14 @@
   teal, blue, blurple, magenta, pink!
   -->
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <!-- Incluye esto al final del <body> de cada página HTML -->
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.body.insertAdjacentHTML('beforeend', data);
+    });
+</script>
 </body>
 
 </html>
