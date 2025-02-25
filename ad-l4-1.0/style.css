@@ -33,6 +33,91 @@ html {
   color: #81f733;
 }
 
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #9891f38f;
+}
+
+.text-content {
+  max-width: 60%;
+}
+
+.text-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.text-content h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección del Blog */
+.blog-posts {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-posts h2 {
+  font-size: 2em;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.post {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f1f8e9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  font-size: 1.5em;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.post p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+.post a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.post a:hover {
+  color: #a5d6a7; /* Verde claro al pasar el mouse */
+}
+
 /* Estilo para footer */
 footer {
   background-color: #f8f9fa;
@@ -58,6 +143,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
   
  /* Estilo para pagina contact */
 body {

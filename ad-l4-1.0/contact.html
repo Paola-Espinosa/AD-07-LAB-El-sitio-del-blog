@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Contacto</title>
-    <link rel="stylesheet" href="style.css"> <!-- Vincula tu archivo de estilo CSS -->
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <!-- Barra de navegación -->
-    <div id="nav-placeholder"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">PerseFlora</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./about.html"
+              >About<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <h1>Formulario de Contacto</h1>
     <form id="contact-form" action="#" method="POST">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required />
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
 
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit">Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
 
     <!-- Pie de página -->
-    <div id="footer-placeholder"> </div>
-    
+    <footer>
+        <p>Autores del sitio web:</p>
+        <ul>
+          <li>Ana Karen Olan</li>
+          <li>Liz Arcadia</li>
+          <li>Diana Alvarez</li>
+          <li>Karla Alonso</li>
+          <li>Jessica Perez</li>
+          <li>Paola Espinosa</li>
+          <li>Ana Conejo</li>
+          <li>Erandi Sánchez</li>
+        </ul>
+        <p>
+          Contacto:
+          <a href="mailto:contacto@perseflora.com">contacto@perseflora.com</a>
+        </p>
+        <p>© 2025 Perseflora. Todos los derechos reservados.</p>
+      </footer>
+
     <!-- Vincula tu archivo JavaScript -->
-    <script src="script.js"></script> 
-
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
