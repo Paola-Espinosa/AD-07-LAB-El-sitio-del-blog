@@ -1,9 +1,32 @@
-const navContent = document.getElementById('nav')?.outerHTML;
+// Función para cargar el header con el nav
+function loadNav() {
+    // Obtener el contenido del header del index.html
+    const headerContent = document.getElementById('bar-nav').outerHTML;
 
-// Agregar la barra de navegacion a cada pagina
-if (navContent && document.getElementById('nav-placeholder')) {
-    document.getElementById('nav-placeholder').innerHTML = navContent;
+    // Insertar el contenido del header en el div con id 'nav-placeholder' en otras páginas
+    const navPlaceholder = document.getElementById('nav-placeholder');
+    if (navPlaceholder) {
+        navPlaceholder.innerHTML = headerContent;
+    }
 }
+
+// Función para cargar el footer
+function loadFooter() {
+    // Obtener el contenido del footer del index.html
+    const footerContent = document.getElementById('main-footer').outerHTML;
+
+    // Insertar el contenido del footer en el div con id 'footer-placeholder' en otras páginas
+    const footerPlaceholder = document.getElementById('footer-placeholder');
+    if (footerPlaceholder) {
+        footerPlaceholder.innerHTML = footerContent;
+    }
+}
+
+// Ejecutar las funciones cuando el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', () => {
+    loadNav();   // Cargar el nav
+    loadFooter(); // Cargar el footer
+});
 
 
 /* Archivo: script.js */
