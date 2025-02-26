@@ -12,60 +12,85 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background-color: #f4f4f4;">
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">PerseFlora</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #35995F;">
+      <a class="navbar-brand" href="#" style="color: #CBFFBF;">PerseFlora</a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./about.html"
-              >About<span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="./index.html" style="color: #CBFFBF;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" href="./about.html" style="color: #CBFFBF;">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html" style="color: #CBFFBF;">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <h1>Formulario de Contacto</h1>
-    <form id="contact-form" action="#" method="POST">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required />
+    <h1 style="color: #35995F; text-align: center; margin-top: 20px;">Formulario de Contacto</h1>
+    <form id="contact-form" action="#" method="POST" aria-labelledby="form-title" style="width: 50%; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+      <label for="name" aria-label="Tu nombre completo" style="color: #35995F;">Nombre:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        aria-required="true"
+        aria-label="Escribe tu nombre completo"
+        placeholder="Nombre completo"
+        style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #84CCA2; border-radius: 5px;"
+      />
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required />
+      <label for="email" aria-label="Tu correo electrónico" style="color: #35995F;">Correo electrónico:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        aria-required="true"
+        aria-label="Introduce tu correo electrónico"
+        placeholder="Correo electrónico"
+        style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #84CCA2; border-radius: 5px;"
+      />
 
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+      <label for="message" aria-label="Escribe tu mensaje" style="color: #35995F;">Mensaje:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        required
+        aria-required="true"
+        aria-label="Escribe tu mensaje aquí"
+        placeholder="Escribe tu mensaje"
+        style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #84CCA2; border-radius: 5px;"
+      ></textarea>
 
-      <button type="submit">Enviar</button>
+      <button type="submit" aria-label="Enviar formulario de contacto" style="background-color: #35995F; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
     </form>
 
     <!-- Pie de página -->
-    <footer>
-        <p>Autores del sitio web:</p>
-        <ul>
-          <li>Ana Karen Olan</li>
-          <li>Liz Arcadia</li>
-          <li>Diana Alvarez</li>
-          <li>Karla Alonso</li>
-          <li>Jessica Perez</li>
-          <li>Paola Espinosa</li>
-          <li>Ana Conejo</li>
-          <li>Erandi Sánchez</li>
-        </ul>
-        <p>
-          Contacto:
-          <a href="mailto:contacto@perseflora.com">contacto@perseflora.com</a>
-        </p>
-        <p>© 2025 Perseflora. Todos los derechos reservados.</p>
-      </footer>
+    <footer style="background-color: #ED7FFF; color: #000; padding: 20px; text-align: center; margin-top: 40px;">
+      <p>Autores del sitio web:</p>
+      <ul style="list-style-type: none; padding: 0;">
+        <li>Ana Karen Olan</li>
+        <li>Liz Arcadia</li>
+        <li>Diana Alvarez</li>
+        <li>Karla Alonso</li>
+        <li>Jessica Perez</li>
+        <li>Paola Espinosa</li>
+        <li>Ana Conejo</li>
+        <li>Erandi Sánchez</li>
+      </ul>
+      <p>
+        Contacto:
+        <a href="mailto:contacto@perseflora.com" style="color: #35995F;">contacto@perseflora.com</a>
+      </p>
+      <p>© 2025 Perseflora. Todos los derechos reservados.</p>
+    </footer>
 
     <!-- Vincula tu archivo JavaScript -->
     <script src="script.js"></script>

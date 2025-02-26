@@ -3,152 +3,28 @@ html {
   width: 100%;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #9791f3;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
+  background-color: #35995F; /* Verde principal de la paleta */
 }
 
-.nav-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-}
-
-.nav-item {
-  font-size: 20px;
-  font-style: oblique;
-  margin: 0 15px;
-}
-
-.nav-item a {
-  text-decoration: none;
-  transition-duration: 0.3s;
-}
-
-.nav-item a:hover{
-  color: #81f733;
-}
-
-.section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #9891f38f;
-}
-
-.text-content {
-  max-width: 60%;
-}
-
-.text-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.text-content h2 {
-  font-size: 1.8em;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.text-content p {
-  font-size: 1.1em;
-  line-height: 1.8;
-}
-
-.image-content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Sección del Blog */
-.blog-posts {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.blog-posts h2 {
-  font-size: 2em;
-  color: #2e7d32;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.post {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #f1f8e9;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.post h3 {
-  font-size: 1.5em;
-  color: #1b5e20;
-  margin-bottom: 10px;
-}
-
-.post p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #333;
-}
-
-.post a {
-  color: #2e7d32;
-  text-decoration: none;
+.navbar-brand {
   font-weight: bold;
+  color: #ffffff; /* Texto blanco para contrastar con el fondo */
+}
+
+.nav-link {
+  font-size: 18px;
+  font-style: oblique;
+  color: #ffffff; /* Texto blanco para contrastar con el fondo */
   transition: color 0.3s ease;
 }
 
-.post a:hover {
-  color: #a5d6a7; /* Verde claro al pasar el mouse */
+.nav-link:hover {
+  color: #CBFFBF; /* Verde claro de la paleta al pasar el mouse */
 }
 
-/* Estilo para footer */
-footer {
-  background-color: #f8f9fa;
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid #e9ecef;
-  margin-top: 40px;
-}
-
-footer p,
-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-footer a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer ul li {
-  display: inline;
-  margin: 0 10px;
-}
-  
- /* Estilo para pagina contact */
+/* Formulario de Contacto */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -159,12 +35,14 @@ body {
 h1 {
   text-align: center;
   color: #333;
+  margin-top: 20px;
 }
 
+/* Estilo de formulario */
 form {
   width: 50%;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -173,6 +51,7 @@ form {
 label {
   display: block;
   margin: 10px 0 5px;
+  color: #35995F; /* Verde principal de la paleta */
 }
 
 input, textarea, button {
@@ -184,13 +63,57 @@ input, textarea, button {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #35995F; /* Verde principal de la paleta */
   color: white;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #2e7d32; /* Verde más oscuro al pasar el mouse */
 }
 
+/* Footer */
+footer {
+  background-color: #ED7FFF; /* Color de la paleta para el footer */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+  margin-top: 40px;
+}
+
+footer p,
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: #000000; /* Texto negro para contrastar con el fondo */
+}
+
+footer a {
+  color: #35995F; /* Verde principal de la paleta */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Ajustes a la sección de contacto */
+form input, form textarea {
+  border-color: #84CCA2; /* Verde claro de la paleta */
+}
+
+form button {
+  background-color: #35995F; /* Verde principal de la paleta */
+}
+
+form button:hover {
+  background-color: #2e7d32; /* Verde más oscuro al pasar el mouse */
+}
