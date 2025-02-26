@@ -1,0 +1,27 @@
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+/*
+Esta línea de código sirve para cuando se quieren modificar los colores 
+(primary, secondary, danger) de bootstrap o para cuando se quieren 
+añadir más colores que no están en la paleta
+  @import "../node_modules/bootstrap/scss/bootstrap";
+
+  Como es muy difícil hacerlo así se utilizan los colores de bootstrap
+*/
+  /*
+  Paleta de colores moraditos y verdecitos:
+
+  Para definir bor ejemplo el color de un boton se escribe bt-color-green-400
+
+$indigo:  #6610f2 !default;
+  $indigo-300
+$purple:  #6f42c1 !default;
+$green:   #198754 !default;
+  $green-400
+$teal:    #20c997 !default;
+  $teal-400
+  $teal-800
+  */
