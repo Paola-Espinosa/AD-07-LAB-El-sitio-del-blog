@@ -33,19 +33,75 @@
       </div>
     </nav>
 
-    <h1>Formulario de Contacto</h1>
-    <form id="contact-form" action="#" method="POST">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required />
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required />
+<!-- TAREA 7
+INSTRUCCIONES 
+2. Add a Form component from Bootstrap with an Email and textarea.
+3. Ensure a button is connected to the email and text area.
+4. When a user clicks the button, a live alert message
+is displayed that says "Message sent" with a dismiss option.-->
 
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+    <div class="container mt-5">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="3"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <div
+        class="alert alert-success alert-dismissible fade show mt-3"
+        role="alert"
+        id="successAlert"
+        style="display: none;"
+      >
+        Message sent
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
 
-      <button type="submit">Enviar</button>
-    </form>
+    <!--APARECE EL TEXTO-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script>
+      // JavaScript to handle form submission and show the alert
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+  
+        // Show the success alert
+        document.getElementById('successAlert').style.display = 'block';
+  
+        // Optionally, you can reset the form after submission
+        this.reset();
+      });
+    </script>
+   
 
     <!-- Pie de página -->
     <footer>
