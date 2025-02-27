@@ -1,151 +1,146 @@
 <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perseflora - Blog de Suculentas</title>
 
-<html lang="en">
-<!--Index EDITADO DE PRUEBA-->
+    <!-- Bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Perseflora - Blog de Suculentas</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-</head>
-
-<body>
-
-  <!--Grid Container-->
-  <div class="container-fluid">
-    <!-- Barra de navegación -->
-    <div class="row justify-content-center">
-
-      <div class="col-5">
-        
-        <!-- As a link -->
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand fs-2 fw-bold" href="index.html">Home</a>
-          </div>
-        </nav>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav">
+      <a class="navbar-brand" href="#">PerseFlora</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html"
+              >About<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-      <div class="col-2">
+    </nav>
 
-        <!-- As a link -->
-        <nav class="navbar bg-body-tertiary text-center">
-          <div class="container-fluid">
-            <a class="navbar-brand fs-3 fw-bold" href="about.html">About</a>
-          </div>
-        </nav>
-      </div>
-      <div class="col-5">
+    <!-- Encabezado con imagen de fondo -->
+    <header
+      class="header bg-image d-flex justify-content-center align-items-center text-white"
+    >
+      <div class="bg-opacity-50 w-100 h-100 position-absolute"></div>
+      <h1 class="position-relative text-white text-center">
+        Bienvenidx a Perseflora
+      </h1>
+    </header>
 
-        <!-- As a link -->
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="contact.html">Contact Us</a>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
+    <!-- Contenido principal -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Publicidad -->
+        <aside class="col-md-3">
+          <article class="p-3 border rounded bg-light">
+            <h3>Publicidad</h3>
+            <p>Las suculentas son ideales para decorar tu hogar...</p>
+            <a href="#" class="btn btn-sm btn-success">Leer más</a>
+          </article>
+        </aside>
 
-  <!-- Contenido pagina inicio -->
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-2">
-        <article class="post">
-          <h3>Publicidad</h3>
-          <p>
-            Las suculentas son ideales para decorar tu hogar...
-          </p>
-          <a href="post3.html">Leer más</a>
-        </article>
-      </div>
-      <div class="col-5">
-        <main class="section">
+        <!-- Sección principal -->
+        <section class="col-md-6">
           <div class="text-content">
-            <h1>Bienvenidx a Perseflora</h1>
-            <p>
-              En este blog te mostraremos más sobre el proyecto que estamos
-              desarrollando en el bootcamp de
-              <strong>Desarrollador Fullstack Java</strong> de
-              <em>Generation México</em>.
-            </p>
             <h2>¿Cómo surgió la idea?</h2>
             <p>
-              Todo este proyecto nace con la idea de querer apoyar a un comerciante
-              local de <strong>Xochimilco</strong>, quien vende suculentas y
-              comparte información valiosa para que aprendas a cuidar tus plantitas
-              y darles el amor que merecen.
+              Todo este proyecto nace con la idea de querer apoyar a un
+              comerciante local de <strong>Xochimilco</strong>, quien vende
+              suculentas y comparte información valiosa para que aprendas a
+              cuidar tus plantitas y darles el amor que merecen.
             </p>
           </div>
-          <div class="image-content">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXvvpxmF0nimOYxRm2XEnNyxE0SeqBCkQhQ&s"
-              alt="Suculentas" />
+          <div class="image-content text-center">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXvvpxmF0nimOYxRm2XEnNyxE0SeqBCkQhQ&s"
+              alt="Suculentas"
+              class="img-fluid rounded"
+            />
           </div>
-        </main>
-      </div>
-
-      <div class="col-2">
-        <section class="blog-posts">
-          <h2>Últimas Publicaciones</h2>
-          <article class="post">
-            <h3>Cómo cuidar tus suculentas</h3>
-            <p>
-              Las suculentas son plantas resistentes, pero necesitan cuidados
-              específicos. Aquí te damos algunos consejos...
-            </p>
-            <a href="post1.html">Leer más</a>
-          </article>
-          <article class="post">
-            <h3>Tipos de suculentas</h3>
-            <p>
-              Existen muchas variedades de suculentas. Conoce las más populares y
-              sus características...
-            </p>
-            <a href="post2.html">Leer más</a>
-          </article>
         </section>
+
+        <!-- Últimos Posts -->
+        <aside class="col-md-3">
+          <section class="p-3 border rounded bg-light">
+            <h2>Últimas Publicaciones</h2>
+            <article class="mb-3">
+              <h4>Cómo cuidar tus suculentas</h4>
+              <p>
+                Las suculentas son resistentes, pero necesitan cuidados
+                específicos. Aquí algunos consejos...
+              </p>
+              <a href="post1.html" class="btn btn-sm btn-success">Leer más</a>
+            </article>
+            <article>
+              <h4>Tipos de suculentas</h4>
+              <p>
+                Conoce las variedades más populares y sus características...
+              </p>
+              <a href="post2.html" class="btn btn-sm btn-success">Leer más</a>
+            </article>
+          </section>
+        </aside>
       </div>
     </div>
-  </div>
-  
-  
-  <!-- PIE DE PÁGINA-->
-  <div class="container-fluid ">
-    <footer>
-      <p>Autores del sitio web:</p>
-      <ul>
-        <li>Ana Karen Olan</li>
-        <li>Liz Arcadia</li>
-        <li>Diana Alvarez</li>
-        <li>Karla Alonso</li>
-        <li>Jessica Perez</li>
-        <li>Paola Espinosa</li>
-        <li>Ana Conejo</li>
-        <li>Erandi Sánchez</li>
-      </ul>
-      <p>
-        Contacto:
-        <a href="mailto:contacto@perseflora.com">contacto@perseflora.com</a>
-      </p>
-      <p>© 2025 Perseflora. Todos los derechos reservados.</p>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-2">Autores del sitio web:</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">Ana Karen Olan</li>
+          <li class="list-inline-item">Liz Arcadia</li>
+          <li class="list-inline-item">Diana Alvarez</li>
+          <li class="list-inline-item">Karla Alonso</li>
+          <li class="list-inline-item">Jessica Perez</li>
+          <li class="list-inline-item">Paola Espinosa</li>
+          <li class="list-inline-item">Ana Conejo</li>
+          <li class="list-inline-item">Erandi Sánchez</li>
+        </ul>
+        <p>
+          Contacto:
+          <a href="mailto:contacto@perseflora.com" class="text-light"
+            >contacto@perseflora.com</a
+          >
+        </p>
+        <p>© 2025 Perseflora. Todos los derechos reservados.</p>
+      </div>
     </footer>
-  </div>
 
-
-  <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!-->
-
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-
-  <!-- Scripts -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

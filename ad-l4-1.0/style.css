@@ -3,11 +3,25 @@ html {
   width: 100%;
 }
 
+.header {
+  background-image: url('https://www.armony.cl/wp-content/uploads/2021/01/jardin_suculentas_1.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  position: relative;
+}
+
+.contact-bg-img {
+  background-image: url("https://viajeras4ever.com/wp-content/uploads/2020/07/viajeras4ever-suculentas-rosas-plantas.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  position: relative;
+}
+
 .nav {
   background-color: #9791f3;
   display: flex;
-  
-
 }
 
 .nav-list {
@@ -28,7 +42,7 @@ html {
   transition-duration: 0.3s;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
   color: #81f733;
 }
 
@@ -146,8 +160,8 @@ footer ul li {
   display: inline;
   margin: 0 10px;
 }
-  
- /* Estilo para pagina contact */
+
+/* Estilo para pagina contact */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -174,7 +188,9 @@ label {
   margin: 10px 0 5px;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -183,7 +199,7 @@ input, textarea, button {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   cursor: pointer;
@@ -192,4 +208,3 @@ button {
 button:hover {
   background-color: #45a049;
 }
-
