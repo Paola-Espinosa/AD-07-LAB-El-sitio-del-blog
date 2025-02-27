@@ -11,8 +11,12 @@
       crossorigin="anonymous"
     />
     <title>replit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
+
   <body>
+
+
     <!--Barra de navegacion -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#">PerseFlora</a>
@@ -56,54 +60,58 @@
       </div>
     </main>
 
-    <h2>Misión</h2>
-    <p>
-      Ser la plataforma digital que conecta con clientes que buscan productos
-      únicos, impulsando su crecimiento y visibilidad en el mercado. Buscamos
-      ofrecer una experiencia de compra sencilla y accesible, promoviendo el
-      comercio local, la diversidad cultural y la sostenibilidad. Conectando a
-      nuestros clientes con la naturaleza mediante una amplia variedad de
-      plantas y accesorios, mientras promovemos el cuidado del medio ambiente y
-      fortalecemos la tradición cultural de nuestra región.
-    </p>
-    <h2>Visión</h2>
-    Nuestra visión es convertirnos en el vivero líder en Xochimilco reconocido
-    por nuestra innovación y calidad en productos de jardinería. Aspiramos a ser
-    un referente en la creación de espacios verdes sostenibles, conectando a las
-    personas con la naturaleza y fomentando una comunidad apasionada por el
-    cuidado de las plantas.
-    <h2>Valores</h2>
-    <ol>
-      <li>
-        <span>Innovación</span> Aplicamos tecnología para facilitar la compra y
-        venta de plantas, brindando una experiencia intuitiva y enriquecedora.
-      </li>
-      <li>
-        <span>Sostenibilidad</span>
-        Promovemos el respeto por el medio ambiente, fomentando el uso
-        responsable de recursos y el consumo de productos naturales.
-      </li>
-      <li>
-        <span>Calidad</span>
-        Garantizamos plantas sanas y bien cuidadas, acompañadas de información
-        confiable para su mantenimiento.
-      </li>
-      <li>
-        <span>Accesibilidad</span>
-        Hacemos que la jardinería sea fácil y disfrutable para todos, sin
-        importar su nivel de experiencia.
-      </li>
-      <li>
-        <span>Raíces Culturales</span>
-        Rescatamos el conocimiento ancestral sobre plantas y promovemos el
-        consumo de productos nacionales.
-      </li>
-      <li>
-        <span>Alegría</span>
-        Celebramos la belleza de la flora mexicana, transmitiendo optimismo y
-        bienestar.
-      </li>
-    </ol>
+<!-- INICIA CARD -->
+<div class="container">
+  <div class="row justify-content-center"> 
+    <div class="col-4 my-3">
+      <div class="card">
+        <img src="./Pic/mision.webp" class="card-img-top" alt="Imagen" style="height: 180px">
+        <div class="card-body">
+          <h5 class="card-title">Misión</h5>
+          <p class="card-text">      Ser la plataforma digital que conecta con clientes que buscan productos
+            únicos, impulsando su crecimiento y visibilidad en el mercado. Buscamos
+            ofrecer una experiencia de compra sencilla y accesible, promoviendo el
+            comercio local, la diversidad cultural y la sostenibilidad.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 my-3">
+      <div class="card">
+        <img src="./Pic/vision.webp" class="card-img-top" alt="Imagen" style="height: 180px">
+        <div class="card-body">
+          <h5 class="card-title">Visión</h5>
+          <p class="card-text">    Nuestra visión es convertirnos en el vivero líder en Xochimilco reconocido
+            por nuestra innovación y calidad en productos de jardinería. Aspiramos a ser
+            un referente en la creación de espacios verdes sostenibles, conectando a las
+            personas con la naturaleza y fomentando una comunidad apasionada por el
+            cuidado de las plantas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 my-3">
+      <div class="card">
+        <img src="./Pic/valores.jpg" class="card-img-top" alt="Imagen" style="height: 180px">
+        <div class="card-body">
+          <h5 class="card-title">Valores</h5>
+          <p class="card-text">Descripción de la tarjeta 3.</p>
+          <ul>
+            <li>Innovación. </li>
+            <li>Sostenibilidad</li>
+            <li>Calidad</li>
+            <li>Accesibilidad</li>
+            <li>Raíces culturales</li>
+            <li>Alegría</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- TERMINA CARD -->
 
     <!--Footer -->
     <footer>
@@ -126,5 +134,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
