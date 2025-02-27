@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Contacto</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -13,130 +13,168 @@
     />
   </head>
   <body>
-      <!--Grid Container-->
-  <div class="container-fluid">
-    <!-- Barra de navegación -->
-    <div class="row justify-content-center">
-
-      <div class="col-5">
-        
-        <!-- As a link -->
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand fs-2 fw-bold" href="index.html">Home</a>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light nav">
+          <a class="navbar-brand" href="#">PerseFlora</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
           </div>
         </nav>
-      </div>
-      <div class="col-2">
 
-        <!-- As a link -->
-        <nav class="navbar bg-body-tertiary text-center">
-          <div class="container-fluid">
-            <a class="navbar-brand fs-3 fw-bold" href="about.html">About</a>
+    <main class="container mt-5">
+      <div class="row">
+        <!-- ASIDE IZQUIERDO -->
+        <aside class="col-md-2 d-none d-md-block">
+          <nav>
+            <h5>Navegación</h5>
+            <ul class="list-group">
+              <li class="list-group-item">Sección 1</li>
+              <li class="list-group-item">Sección 2</li>
+              <li class="list-group-item">Sección 3</li>
+              <li class="list-group-item">Sección 4</li>
+              <li class="list-group-item">Sección 5</li>
+              <li class="list-group-item">Sección 6</li>
+              <li class="list-group-item">Sección 7</li>
+              <li class="list-group-item">Sección 8</li>
+              <li class="list-group-item">Sección 9</li>
+              <li class="list-group-item">Sección 10</li>
+            </ul>
+          </nav>
+          <div class="mt-3 p-3 bg-light rounded">
+            <h6>Hazte Cliente</h6>
+            <p>
+              Adquiere las mejores suculentas con nosotros. Contáctanos y forma
+              parte de nuestra comunidad.
+            </p>
           </div>
-        </nav>
-      </div>
-      <div class="col-5">
+        </aside>
 
-        <!-- As a link -->
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="contact.html">Contact Us</a>
+        <!-- FORMULARIO DE CONTACTO (CONTENIDO PRINCIPAL) -->
+        <section class="col-12 col-md-7">
+          <div
+            class="contact-bg-img bg-image d-flex justify-content-center align-items-center text-white rounded"
+          >
+            <div
+              class="bg-opacity-50 w-100 h-100 position-absolute rounded"
+            ></div>
+            <h1 class="position-relative text-white text-center">Contáctanos</h1>
           </div>
-        </nav>
+          <form id="contactForm" class="w-100 border rounded bg-light">
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Ingresa tu correo"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Escribe tu mensaje"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">
+              Enviar
+            </button>
+          </form>
+
+          <!-- ALERTA DE ÉXITO -->
+          <div
+            class="alert alert-success alert-dismissible fade show mt-3"
+            role="alert"
+            id="successAlert"
+            style="display: none"
+          >
+            ¡Mensaje enviado con éxito!
+            <button
+              type="button"
+              class="close"
+              data-dismiss="alert"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- ASIDE DERECHO -->
+        <aside class="col-md-3 d-none d-md-block">
+          <h5>Información de Suculentas</h5>
+          <ul class="list-group">
+            <li class="list-group-item">Riego adecuado</li>
+            <li class="list-group-item">Tipos de suculentas</li>
+            <li class="list-group-item">Luz solar ideal</li>
+            <li class="list-group-item">Cuidado en invierno</li>
+            <li class="list-group-item">Plagas comunes</li>
+            <li class="list-group-item">Macetas recomendadas</li>
+            <li class="list-group-item">Sustrato adecuado</li>
+            <li class="list-group-item">Propagación</li>
+            <li class="list-group-item">Decoración con suculentas</li>
+            <li class="list-group-item">Beneficios ecológicos</li>
+            <li class="list-group-item">Floración</li>
+            <li class="list-group-item">Fertilización</li>
+            <li class="list-group-item">Errores comunes</li>
+            <li class="list-group-item">Consejos de expertos</li>
+            <li class="list-group-item">Crecimiento saludable</li>
+          </ul>
+        </aside>
       </div>
-    </div>
-  </div>
-
-
-<!-- TAREA 7
-INSTRUCCIONES 
-2. Add a Form component from Bootstrap with an Email and textarea.
-3. Ensure a button is connected to the email and text area.
-4. When a user clicks the button, a live alert message
-is displayed that says "Message sent" with a dismiss option.-->
-
-    <div class="container mt-5">
-      <h1>Contact Us</h1>
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="Enter email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea
-            class="form-control"
-            id="message"
-            rows="3"
-            placeholder="Enter your message"
-            required
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
-      <div
-        class="alert alert-success alert-dismissible fade show mt-3"
-        role="alert"
-        id="successAlert"
-        style="display: none;"
-      >
-        Message sent
-        <button
-          type="button"
-          class="close"
-          data-dismiss="alert"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    </div>
+    </main>
 
     <!--APARECE EL TEXTO-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-    <script>
-      // JavaScript to handle form submission and show the alert
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting the traditional way
-  
-        // Show the success alert
-        document.getElementById('successAlert').style.display = 'block';
-  
-        // Optionally, you can reset the form after submission
-        this.reset();
-      });
-    </script>
-   
 
     <!-- Pie de página -->
     <footer>
-        <p>Autores del sitio web:</p>
-        <ul>
-          <li>Ana Karen Olan</li>
-          <li>Liz Arcadia</li>
-          <li>Diana Alvarez</li>
-          <li>Karla Alonso</li>
-          <li>Jessica Perez</li>
-          <li>Paola Espinosa</li>
-          <li>Ana Conejo</li>
-          <li>Erandi Sánchez</li>
-        </ul>
-        <p>
-          Contacto:
-          <a href="mailto:contacto@perseflora.com">contacto@perseflora.com</a>
-        </p>
-        <p>© 2025 Perseflora. Todos los derechos reservados.</p>
-      </footer>
+      <p>Autores del sitio web:</p>
+      <ul>
+        <li>Ana Karen Olan</li>
+        <li>Liz Arcadia</li>
+        <li>Diana Alvarez</li>
+        <li>Karla Alonso</li>
+        <li>Jessica Perez</li>
+        <li>Paola Espinosa</li>
+        <li>Ana Conejo</li>
+        <li>Erandi Sánchez</li>
+      </ul>
+      <p>
+        Contacto:
+        <a href="mailto:contacto@perseflora.com">contacto@perseflora.com</a>
+      </p>
+      <p>© 2025 Perseflora. Todos los derechos reservados.</p>
+    </footer>
 
     <!-- Vincula tu archivo JavaScript -->
     <script src="script.js"></script>

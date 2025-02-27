@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -11,121 +11,185 @@
       crossorigin="anonymous"
     />
     <title>replit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav">
+      <a class="navbar-brand" href="#">PerseFlora</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./about.html"
+              >About<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <!--Grid Container-->
-  <div class="container-fluid">
-    <!-- Barra de navegación -->
-    <div class="row justify-content-center">
-
-      <div class="col-5">
-        
-        <!-- As a link -->
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand fs-2 fw-bold" href="index.html">Home</a>
+    <main class="container mt-5">
+      <div class="row">
+        <!-- ASIDE IZQUIERDO -->
+        <aside class="col-md-2 d-none d-md-block">
+          <nav>
+            <h5>Navegación</h5>
+            <ul class="list-group">
+              <li class="list-group-item">Sección 1</li>
+              <li class="list-group-item">Sección 2</li>
+              <li class="list-group-item">Sección 3</li>
+              <li class="list-group-item">Sección 4</li>
+              <li class="list-group-item">Sección 5</li>
+              <li class="list-group-item">Sección 6</li>
+              <li class="list-group-item">Sección 7</li>
+              <li class="list-group-item">Sección 8</li>
+              <li class="list-group-item">Sección 9</li>
+              <li class="list-group-item">Sección 10</li>
+            </ul>
+          </nav>
+          <div class="mt-3 p-3 bg-light rounded">
+            <h6>Hazte Cliente</h6>
+            <p>
+              Adquiere las mejores suculentas con nosotros. Contáctanos y forma
+              parte de nuestra comunidad.
+            </p>
           </div>
-        </nav>
-      </div>
-      <div class="col-2">
+        </aside>
 
-        <!-- As a link -->
-        <nav class="navbar bg-body-tertiary text-center">
-          <div class="container-fluid">
-            <a class="navbar-brand fs-3 fw-bold" href="about.html">About</a>
+        <!-- CONTENIDO PRINCIPAL -->
+        <section class="col-md-8">
+          <div class="text-content">
+            <h2>Sobre Nosotros</h2>
+            <p>
+              Perseflora nació como un proyecto en el bootcamp de
+              <strong>Generation México</strong>, con el objetivo de apoyar a
+              pequeños comerciantes de plantas en Xochimilco.
+            </p>
+            <p>
+              Nos apasiona compartir conocimientos sobre suculentas y fomentar
+              el amor por la naturaleza.
+            </p>
+            <a href="contact.html" class="btn btn-success">Contáctanos</a>
           </div>
-        </nav>
-      </div>
-      <div class="col-5">
-
-        <!-- As a link -->
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="contact.html">Contact Us</a>
+          <div class="image-content text-center my-4">
+            <img
+              src="https://florsperatu.com/wp-content/uploads/2023/11/suculentas-planta.jpg"
+              alt="Jardín de suculentas"
+              class="img-fluid rounded"
+            />
           </div>
-        </nav>
-      </div>
-    </div>
-  </div>
 
-    <h1>¿Quiénes somos?</h1>
-    <main class="section">
-      <div class="text-content">
-        <h2>Sobre Nosotros</h2>
-        <p>
-          Perseflora nació como un proyecto en el bootcamp de
-          <strong>Generation México</strong>, con el objetivo de apoyar a
-          pequeños comerciantes de plantas en Xochimilco.
-        </p>
-        <p>
-          Nos apasiona compartir conocimientos sobre suculentas y fomentar el
-          amor por la naturaleza.
-        </p>
-        <a href="contact.html" class="button">Contáctanos</a>
-      </div>
-      <div class="image-content">
-        <img
-          src="https://florsperatu.com/wp-content/uploads/2023/11/suculentas-planta.jpg"
-          alt="Jardín de suculentas"
-        />
+          <!-- CARDS -->
+          <div class="row text-center">
+            <div class="col-md-4 my-3">
+              <div class="card h-100">
+                <img
+                  src="./Pic/mision.webp"
+                  class="card-img-top"
+                  alt="Misión"
+                  style="height: 180px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Misión</h5>
+                  <p class="card-text">
+                    Ser la plataforma digital que conecta con clientes que
+                    buscan productos únicos, impulsando su crecimiento y
+                    visibilidad en el mercado.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+              <div class="card h-100">
+                <img
+                  src="./Pic/vision.webp"
+                  class="card-img-top"
+                  alt="Visión"
+                  style="height: 180px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Visión</h5>
+                  <p class="card-text">
+                    Convertirnos en el vivero líder en Xochimilco reconocido por
+                    nuestra innovación y calidad en productos de jardinería.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+              <div class="card h-100">
+                <img
+                  src="./Pic/valores.jpg"
+                  class="card-img-top"
+                  alt="Valores"
+                  style="height: 180px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Valores</h5>
+                  <ul class="list-unstyled">
+                    <li>Innovación</li>
+                    <li>Sostenibilidad</li>
+                    <li>Calidad</li>
+                    <li>Accesibilidad</li>
+                    <li>Raíces culturales</li>
+                    <li>Alegría</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ASIDE DERECHO -->
+        <aside class="col-md-2 d-none d-md-block">
+          <h5>Información de Suculentas</h5>
+          <ul class="list-group">
+            <li class="list-group-item">Riego adecuado</li>
+            <li class="list-group-item">Tipos de suculentas</li>
+            <li class="list-group-item">Luz solar ideal</li>
+            <li class="list-group-item">Cuidado en invierno</li>
+            <li class="list-group-item">Plagas comunes</li>
+            <li class="list-group-item">Macetas recomendadas</li>
+            <li class="list-group-item">Sustrato adecuado</li>
+            <li class="list-group-item">Propagación</li>
+            <li class="list-group-item">Decoración con suculentas</li>
+            <li class="list-group-item">Beneficios ecológicos</li>
+            <li class="list-group-item">Floración</li>
+            <li class="list-group-item">Fertilización</li>
+            <li class="list-group-item">Errores comunes</li>
+            <li class="list-group-item">Consejos de expertos</li>
+            <li class="list-group-item">Crecimiento saludable</li>
+          </ul>
+        </aside>
       </div>
     </main>
 
-<!-- INICIA CARD -->
-<div class="container">
-  <div class="row justify-content-center"> 
-    <div class="col-4 my-3">
-      <div class="card">
-        <img src="./Pic/mision.webp" class="card-img-top" alt="Imagen" style="height: 180px">
-        <div class="card-body">
-          <h5 class="card-title">Misión</h5>
-          <p class="card-text">      Ser la plataforma digital que conecta con clientes que buscan productos
-            únicos, impulsando su crecimiento y visibilidad en el mercado. Buscamos
-            ofrecer una experiencia de compra sencilla y accesible, promoviendo el
-            comercio local, la diversidad cultural y la sostenibilidad.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-4 my-3">
-      <div class="card">
-        <img src="./Pic/vision.webp" class="card-img-top" alt="Imagen" style="height: 180px">
-        <div class="card-body">
-          <h5 class="card-title">Visión</h5>
-          <p class="card-text">    Nuestra visión es convertirnos en el vivero líder en Xochimilco reconocido
-            por nuestra innovación y calidad en productos de jardinería. Aspiramos a ser
-            un referente en la creación de espacios verdes sostenibles, conectando a las
-            personas con la naturaleza y fomentando una comunidad apasionada por el
-            cuidado de las plantas.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-4 my-3">
-      <div class="card">
-        <img src="./Pic/valores.jpg" class="card-img-top" alt="Imagen" style="height: 180px">
-        <div class="card-body">
-          <h5 class="card-title">Valores</h5>
-          <p class="card-text">Descripción de la tarjeta 3.</p>
-          <ul>
-            <li>Innovación. </li>
-            <li>Sostenibilidad</li>
-            <li>Calidad</li>
-            <li>Accesibilidad</li>
-            <li>Raíces culturales</li>
-            <li>Alegría</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- TERMINA CARD -->
+    <!-- TERMINA CARD -->
 
     <!--Footer -->
     <footer>
@@ -148,6 +212,10 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
