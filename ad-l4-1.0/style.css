@@ -3,11 +3,10 @@ html {
   width: 100%;
 }
 
-.navbar {
+.nav {
   background-color: #9791f3;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  
 
 }
 
